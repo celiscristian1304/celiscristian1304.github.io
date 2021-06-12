@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>GIFOS</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="/styles/symbols.css">
+</head>
+<body class="dayColors">
+    <header>
+        <a href="./index.html">
+            <div class="logoGifos">
+                <span class="icon-document"></span>
+                <span class="wordGifos">GIFOS</span>
+            </div>
+        </a>
+        <input type="checkbox" id="hamburguer">
+        <label for="hamburguer"><span class="icon-bars"></span></label>
+        <span class="CheckboxActive">X</span>
+        <div id="backGroundColorHeader"></div>
+        <nav>
+            <ul>
+                <li><span class="nightModeAnchor">modo nocturno</span></li>
+                <li><a href="./links/favorites.html" class="favoritesAnchor">favoritos</a></li>
+                <li><a href="./links/myGifos.html" class="myGifosAnchor">mis GIFOS</a></li>
+                <li><button role="link" onclick="window.location='./links/addGifos.html'" class="addGifos">+</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="mainInformation">
+        <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+        <img src="./images/ilustra_header.svg" alt="GIFOS people">
+    </section>
+    <section id="searchInput" class="inputNormal">
+        <div id="inputSearch">
+            <span class="icon-search" id="magnifyingGlassActive"></span>
+            <input type="text" placeholder="Busca GIFOS y más" id="textTosearch">
+            <span class="icon-search" id="magnifyingGlassNormal"></span>
+            <div id="suggestions">
+
+            </div>
+        </div>
+    </section>
+    <section id="trendingWords">
+        <h2>trending:</h2>
+        <div id="topFiveWords">
+
+        </div>
+    </section>
+    <section id="gifsSearched">
+        <div id="withoutResults">
+
+        </div>
+        <div id="withResults">
+            <div id="titleResults"></div>
+            <div id="gifsToShow"></div>
+            <div id="buttonViewMore"></div>
+        </div>
+    </section>
+    <section id="trendingGifosTitle">
+        <h2>
+            trending GIFOS
+        </h2>
+        <p>
+            Mira los últimos <span>GIFO de nuestra comunidad.</span>
+        </p>
+    </section>
+    <section id="topThreeTrendingGifos">
+        <div id="gifsTrendingGifos">
+            
+        </div>
+    </section>
+    <div class="bottomTrendinggifos"></div>
+    <footer id="sameFooter">
+        <div class="icons">
+            <span id="iconsToShare">Compartir en:</span>
+            <a href="https://www.facebook.com/GIPHY" target="blank"><span class="icon-facebook"></span></a>
+            <a href="https://twitter.com/giphy" target="blank"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com/giphy" target="blank"><span class="icon-instagram"></span></a>
+        </div>
+        <span id="copyRight">&#169; GIFOS 2020 all rights reserved.</span>
+    </footer>
+
+    <script src="./JS/header.js"></script>
+    <script src="./JS/inputSearch.js"></script>
+    <script src="./JS/topThreeTrending.js"></script>
+</body>
+</html>

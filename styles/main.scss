@@ -1,0 +1,295 @@
+@import '_header';
+@import '_initStyles';
+@import '_colors';
+@import '_trending';
+@import '_footer';
+@import '_gridGifs';
+
+#mainInformation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h1{
+        margin: 171px 0 24px 0;
+        width: 64.86%;
+        padding: 0 29%;
+        font: 900 35px 'Montserrat', sans-serif;
+        text-align: center;
+        line-height: 50px;
+    }
+    img{
+        width: 27.71%;
+        margin: 0 36.18%;
+    }
+}
+.inputNormal{
+    display: flex;
+    justify-content: center;
+    width: 38.26%;
+    margin: 0 0 0 30.90%;
+    border: 1px solid;
+    border-radius: 27px;
+    #inputSearch{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        #magnifyingGlassActive, #magnifyingGlassNormal{
+            position: absolute;
+            font: 100 20px 'Montserrat', sans-serif;
+        }
+        #magnifyingGlassActive{
+            margin: 15px 0 0 1.46%;
+            color: #9CAFC3;
+            display: none;
+        }
+        #textTosearch{
+            border: none;
+            margin: 15px 0 13px 54px;
+            font: 100 16px 'Roboto', sans-serif;
+            width: 38.11%;
+            &:focus{
+                outline: none;
+            }
+        }
+        #magnifyingGlassNormal{
+            right: 0;
+            margin: 15px 32.22% 0 0;
+            cursor: pointer;
+        }
+        #wordSuggestions{
+            /* The following code lines underline the words with a specific length and position */
+            background-image: linear-gradient(rgba($color: #9CAFC3 , $alpha: 0.5),rgba($color: #9CAFC3 , $alpha: 0.5));
+            background-position: top center;
+            background-size: 91.65% 1px;
+            background-repeat: no-repeat;
+            /* ------------------------------------------------------------------------------ */
+            padding: 14px 0 8px 4.28%;
+            .suggestionUnique{
+                padding: 0 0 10px 0;
+                .icon-search, .justOneWord{
+                    color: #9CAFC3;
+                }
+                .icon-search{
+                    font: 100 15.8px 'Montserrat', sans-serif;
+                    margin: 0 14.6px 0 0;
+                }
+                .justOneWord{
+                    font: 100 16px 'Roboto', sans-serif;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.inputFixed{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 23.19%;
+    margin: 19px 0 0 23.82%;
+    border: 1px solid;
+    border-radius: 27px;
+    #inputSearch{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        #magnifyingGlassActive, #magnifyingGlassNormal{
+            position: absolute;
+            font: 100 20px 'Montserrat', sans-serif;
+        }
+        #magnifyingGlassActive{
+            margin: 15px 0 0 4%;
+            color: #9CAFC3;
+            display: none;
+        }
+        #textTosearch{
+            border: none;
+            margin: 15px 0 13px 54px;
+            font: 100 16px 'Roboto', sans-serif;
+            width: 42%;
+            &:focus{
+                outline: none;
+            }
+        }
+        #magnifyingGlassNormal{
+            right: 0;
+            margin: 15px 5% 0 0;
+            cursor: pointer;
+        }
+        #wordSuggestions{
+            /* The following code lines underline the words with a specific length and position */
+            background-image: linear-gradient(rgba($color: #9CAFC3 , $alpha: 0.5),rgba($color: #9CAFC3 , $alpha: 0.5));
+            background-position: top center;
+            background-size: 91.65% 1px;
+            background-repeat: no-repeat;
+            /* ------------------------------------------------------------------------------ */
+            padding: 14px 0 8px 4.28%;
+            .suggestionUnique{
+                padding: 0 0 10px 0;
+                .icon-search, .justOneWord{
+                    color: #9CAFC3;
+                }
+                .icon-search{
+                    font: 100 15.8px 'Montserrat', sans-serif;
+                    margin: 0 14.6px 0 0;
+                }
+                .justOneWord{
+                    font: 100 16px 'Roboto', sans-serif;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+#trendingWords{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 73px 0 95px 0;
+    h2{
+        margin: 0 0 7px 0;
+        text-transform: capitalize;
+        font: 900 18px 'Montserrat', sans-serif;
+        line-height: 25px;
+    }
+    #topFiveWords{
+        span{
+            text-transform: capitalize;
+            font: 100 16px 'Montserrat', sans-serif;
+            line-height: 25px;
+            cursor: pointer;
+        }
+    }
+}
+#gifsSearched{
+    /* The following code lines underline the words with a specific length and position */
+    background-image: linear-gradient(rgba($color: #9CAFC3 , $alpha: 0.5),rgba($color: #9CAFC3 , $alpha: 0.5));
+    background-position: top center;
+    background-size: 23.47% 1px;
+    background-repeat: no-repeat;
+    /* ------------------------------------------------------------------------------ */
+    #withoutResults{
+        margin: -21px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Without results fomr API------------------------------------------------------ */
+        #titleWithOutResults{
+            font: 900 30px 'Montserrat', sans-serif;
+            text-transform: capitalize;
+            line-height: 30px;
+            margin: 83.9px 0 109px 0;
+            overflow: visible;
+            max-width: 90%;
+            text-align: center;
+        }
+        #imageWithOutResults{
+            width: 150px;
+            height: auto;
+        }
+        #legendWithOutResults{
+            font: 900 22px 'Montserrat', sans-serif;
+            line-height: 25px;
+            overflow: hidden;
+            margin: 29px 0 149px 0;
+        }
+    }
+    /* ------------------------------------------------------------------------------ */
+
+    /* With results fomr API--------------------------------------------------------- */
+    #withResults{
+        #titleResults{
+            display: flex;
+            justify-content: center;
+            #titleWithResults{
+                font: 900 35px 'Montserrat', sans-serif;
+                text-transform: capitalize;
+                line-height: 30px;
+                margin: 81.9px 0 59px 0;
+                overflow: visible;
+                max-width: 90%;
+                text-align: center;
+            }
+        }
+    }
+    /* ------------------------------------------------------------------------------ */
+}
+
+@media screen and (max-width:1250px){
+    .inputFixed{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:750px){
+    #mainInformation{
+        h1{
+            margin: 107px 0 31px 0;
+            width: 76.27%;
+            padding: 0;
+            font-size: 25px;
+            line-height: 33px;
+        }
+        img{
+            width: 72.8%;
+            margin: 0 13.6%;
+        }
+    }
+    .inputNormal{
+        width: 89.1%;
+        margin: 0 0 0 5.33%;
+        #inputSearch{            
+            #magnifyingGlassActive{
+                margin-left: 3%;
+            }
+            #textTosearch{
+                width: 60%;
+            }
+            #magnifyingGlassNormal{
+                margin-right: 10.93%;
+            }
+        }
+    }
+    #trendingWords{
+        margin: 31px 0 45px 0;
+        h2{
+            margin: 0 0 2px 0;
+            font-size: 16px;
+        }
+        #topFiveWords{
+            max-width: 225px;
+            text-align: center;
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+    #gifsSearched{
+        #withoutResults{
+            background-size: 29.07% 1px;
+            margin: -10px 0 0 0;
+            #titleWithOutResults{
+                font-size: 25px;
+                line-height: 40px;
+                margin: 43px 0 55.86px 0;
+            }
+            #legendWithOutResults{
+                font-size: 17px;
+                margin-bottom: 78px;
+            }
+        }
+        #withResults{
+            #titleResults{
+                #titleWithResults{
+                    font-size: 25px;
+                    line-height: 40px;
+                    margin: 43px 0 38px 0;
+                }
+            }
+        }
+    }
+}

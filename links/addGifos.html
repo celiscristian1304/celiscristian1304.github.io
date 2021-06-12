@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Crear Gifos</title>
+    <link rel="stylesheet" href="../styles/symbols.css">
+    <link rel="stylesheet" href="../styles/addGifos.css">
+</head>
+<body class="dayColors">
+    <header>
+        <a href="../index.html">
+            <div class="logoGifos">
+                <span class="icon-document"></span>
+                <span class="wordGifos">GIFOS</span>
+            </div>
+        </a>
+        <div id="backGroundColorHeader"></div>
+        <nav>
+            <ul>
+                <li><span class="nightModeAnchor">modo nocturno</span></li>
+                <li><a href="./favorites.html" class="favoritesAnchor">favoritos</a></li>
+                <li><a href="./myGifos.html" class="myGifosAnchor">mis GIFOS</a></li>
+                <li><button role="link" onclick="window.location='./addGifos.html'" class="addGifos">+</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="../images/pelicula.svg" alt="Cinta de película" id="movieTape">
+    <span id="timer" class="reloj"></span>
+
+    <section id="mainVideo">
+        <img src="../images/camara.svg" alt="Cámara" id="cameraComplete">
+        <img src="../images/element-luz-camara.svg" alt="Luz" id="lightCamera">
+        <div id="videoShow">
+            <div id="cornerUpperRigth"></div>
+            <div id="cornerUpperLeft"></div>
+            <div id="cornerLowerRigth"></div>
+            <div id="cornerLowerLeft"></div>
+            <div id="bodyVideo">
+                <p>Aquí podrás</p>
+                <p>crear tus propios <span>GIFOS</span></p>
+                <p>¡Crea tu GIFO en sólo 3 pasos!</p>
+                <p>(sólo necesitas una cámara para grabar un video)</p>
+            </div>
+            <video></video>
+            <div id="hoverVideo">
+                <span class="icon-loader"></span>
+                <span>Estamos subiento tu GIFO</span>
+                <div class="buttonsScriptSearch">
+                    <a class="downloadScriptSearch" id="downloadTrendSearch">
+                        <span class="icon-download"></span>
+                    </a>
+                    <button class="likeScriptSearch" id="addTrendSearch">
+                        <span class="icon-link"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="buttonTransition">
+        <div id="indicatorsButton">
+            <span id="numberOne" class="numberIndicators">1</span>
+            <span id="numberTwo" class="numberIndicators">2</span>
+            <span id="numberThree" class="numberIndicators">3</span>
+        </div>
+        <div id="lineOverButton"></div>
+        <button id="createGif">COMENZAR</button>
+    </section>
+
+    <footer id="sameFooter">
+        <div class="icons">
+            <span id="iconsToShare">Compartir en:</span>
+            <a href="https://www.facebook.com/GIPHY" target="blank"><span class="icon-facebook"></span></a>
+            <a href="https://twitter.com/giphy" target="blank"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com/giphy" target="blank"><span class="icon-instagram"></span></a>
+        </div>
+        <span id="copyRight">&#169; GIFOS 2020 all rights reserved.</span>
+    </footer>
+    
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="../JS/header.js"></script>
+    <script src="../JS/newGif.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+#sameFooter{
+    display: flex;
+    width: 100%;
+    height: 116px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 5px;
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 192px;
+        margin: 0 0 0 10.9%;
+        #iconsToShare{
+            font: 300 13px 'Roboto', sans-serif;
+            letter-spacing: 0;
+        }
+        a{
+            span{
+                font-size: 19px;
+            }
+        }
+    }
+    #copyRight{
+        font: 300 13px 'Roboto', sans-serif;
+        letter-spacing: 0;
+        text-transform: capitalize;
+        margin: 0 10.9% 0 0;
+    }
+}
+@media screen and (max-width:750px){
+    #sameFooter{
+        justify-content: center;
+        align-items: unset;
+        height: 196px;
+        .icons, #copyRight{
+            position: absolute;
+        }
+        .icons{
+            width: 91px;
+            margin: 47px 0 0 0;
+            flex-wrap: wrap;
+            #iconsToShare{
+                font-size: 15px;
+                letter-spacing: 0;
+                margin: 0 0 22px 0;
+            }
+        }
+        #copyRight{
+            margin: 153px 0 0 0;
+        }
+    }
+}

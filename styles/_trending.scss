@@ -1,0 +1,253 @@
+#trendingGifosTitle{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    h2{
+        margin: 67px 0 12px 0;
+        text-transform: capitalize;
+        font: 900 25px 'Montserrat', sans-serif;
+        line-height: 30px;
+        overflow: hidden;
+    }
+    p{
+        font: 100 18px 'Roboto', sans-serif;
+        height: fit-content;
+        margin: 0 0 53px 0;
+    }
+}
+#topThreeTrendingGifos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    #gifsTrendingGifos{
+        display: flex;
+        width: 78.26%;
+        justify-content: space-between;
+        .cardExpand{
+            top: 0;
+            left: 0;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            .buttonCloseExpand{
+                position: absolute;
+                right: 0;
+                margin: 0 20% 0 0;
+                top: 66.4px;
+                font: 300 18px 'Roboto', sans-serif;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            img{
+                align-self: center;
+                width: 48.26%;
+                height: 385px;
+                margin: 160px 0 0 0;
+            }
+            .buttonsScript{
+                position: absolute;
+                margin: 0 26.3% 0 0;
+                right: 0;
+                top: 567px;
+                display: flex;
+                justify-content: space-between;
+                width: 93px;
+                .expandScript{
+                    display: none;
+                }
+                button, a{
+                    padding: 0;
+                    margin: 0;
+                    width: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    /* The following code lines do the height exactly equal to width */
+                    &:before{
+                        content: "";
+                        display: block;
+                        padding-top: 100%; /* relation 1:1 */
+                    }
+                    span{
+                        font-size: 18px;
+                        position: absolute;
+                    }
+                }
+            }
+            .infoGif{
+                position: absolute;
+                margin: 0 0 0 26%;
+                top: 572px;
+                h3{
+                    font: 600 16px 'Roboto', sans-serif;
+                    margin: 0;
+                }
+                h4{
+                    font: 300 15px 'Roboto', sans-serif;
+                    margin: 0 0 5.5px 0;
+                }
+            }
+        }
+        .card{
+            width: 31.68%;
+            margin: 0;
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                padding-top: 77.03%; /* relation width 357 - height 275 */
+            }
+            img, .hoverColor{
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            .buttonsScript{
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                justify-content: space-between;
+                margin: 10px;
+                button, a{
+                    padding: 0;
+                    margin: 0;
+                    width: 27.35%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba($color: #ffffff, $alpha: 0.65);
+                    border-radius: 6px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba($color: #ffffff, $alpha: 1);
+                    }
+                    /* The following code lines do the height exactly equal to width */
+                    &:before{
+                        content: "";
+                        display: block;
+                        padding-top: 100%; /* relation 1:1 */
+                    }
+                    span{
+                        font-size: 18px;
+                        position: absolute;
+                        color: #572EE5;
+                    }
+                }
+            }
+            .infoGif{
+                position: absolute;
+                bottom: 0;
+                margin: 0 0 51px 18px;
+                display: none;
+                h3, h4{
+                    color: #ffffff;
+                }
+                h3{
+                    font: 600 16px 'Roboto', sans-serif;
+                    margin: 0;
+                }
+                h4{
+                    font: 300 15px 'Roboto', sans-serif;
+                    margin: 0 0 5.5px 0;
+                }
+            }
+            &:hover .hoverColor{
+                background-color: rgba($color: #572EE5, $alpha: 0.65);
+            }
+            &:hover .buttonsScript{
+                width: 32.77%;
+            }
+            &:hover .infoGif{
+                display: initial;
+            }
+        }
+    }
+}
+.bottomTrendinggifos{
+        width: 100%;
+        &:before{
+            content: "";
+            display: block;
+            padding-top: 12.68%;
+        }
+    }
+@media screen and (max-width:750px){
+    #trendingGifosTitle{
+        h2{
+            margin: 46px 0 7px 0;
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+            text-align: center;
+            margin: 0 0 32px 0;
+            line-height: 23px;
+            /* Simulate a br with CSS */
+            span:nth-child(1)::before{
+                content: "\A";
+                white-space: pre;
+            }
+        }
+    }
+    #topThreeTrendingGifos{
+        #gifsTrendingGifos{
+            width: 100%;
+            overflow-x: scroll;
+            scroll-snap-type: x proximity;
+            padding: 0 11px;
+            .cardExpand{
+                .buttonCloseExpand{
+                    margin: 0 10.48% 0 0;
+                    top: 64px;
+                    font-size: 16px;
+                    &:hover{
+                        cursor: none;
+                    }
+                }
+                img{
+                    width: 84.8%;
+                    height: 245px;
+                    margin: 156px 0 0 0;
+                }
+                .buttonsScript{
+                    margin: 0 7.73% 0 0;
+                    top: 418px;
+                }
+                .infoGif{
+                    margin: 0 0 0 7.87%;
+                    top: 415px;
+                }
+            }
+            .card{
+                width: auto;
+                min-width: 243px;
+                padding: 0 11px;
+                /* scroll-snap-align: center; */
+                .hoverColor{
+                    display: none;
+                }
+                &:hover .buttonsScript{
+                    width: 0;
+                }
+                &:hover .infoGif{
+                    display: none;
+                }
+            }
+        }
+    }
+    .bottomTrendinggifos{
+        height: 82px;
+    }
+}

@@ -1,0 +1,222 @@
+#withResults{
+    #gifsToShow{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .cardExpandGridGif{
+            top: 0;
+            left: 0;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            .buttonCloseExpandSearch{
+                position: absolute;
+                right: 0;
+                margin: 0 20% 0 0;
+                top: 66.4px;
+                font: 300 18px 'Roboto', sans-serif;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            img{
+                align-self: center;
+                width: 48.26%;
+                height: 385px;
+                margin: 160px 0 0 0;
+            }
+            .buttonsScriptSearch{
+                position: absolute;
+                margin: 0 26.3% 0 0;
+                right: 0;
+                top: 567px;
+                display: flex;
+                justify-content: space-between;
+                width: 93px;
+                .expandScriptSearch{
+                    display: none;
+                }
+                button, a{
+                    padding: 0;
+                    margin: 0;
+                    width: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    /* The following code lines do the height exactly equal to width */
+                    &:before{
+                        content: "";
+                        display: block;
+                        padding-top: 100%; /* relation 1:1 */
+                    }
+                    span{
+                        font-size: 18px;
+                        position: absolute;
+                    }
+                }
+            }
+            .infoGifSearch{
+                position: absolute;
+                margin: 0 0 0 26%;
+                top: 572px;
+                h3{
+                    font: 600 16px 'Roboto', sans-serif;
+                    margin: 0;
+                }
+                h4{
+                    font: 300 15px 'Roboto', sans-serif;
+                    margin: 0 0 5.5px 0;
+                }
+            }
+        }
+        .cardNormal{
+            width: 18.28%;
+            margin: 0;
+            position: relative;
+            margin: 1.01%;
+            &:before{
+                content: "";
+                display: block;
+                padding-top: 70%; /* relation width 260 - height 200 */
+            }
+            img, .hoverColorSearch{
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            .buttonsScriptSearch{
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                justify-content: space-between;
+                margin: 10px;
+                button, a{
+                    padding: 0;
+                    margin: 0;
+                    width: 27.35%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba($color: #ffffff, $alpha: 0.65);
+                    border-radius: 6px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba($color: #ffffff, $alpha: 1);
+                    }
+                    /* The following code lines do the height exactly equal to width */
+                    &:before{
+                        content: "";
+                        display: block;
+                        padding-top: 100%; /* relation 1:1 */
+                    }
+                    span{
+                        font-size: 18px;
+                        position: absolute;
+                        color: #572EE5;
+                    }
+                }
+            }
+            .infoGifSearch{
+                position: absolute;
+                bottom: 0;
+                margin: 0 0 27px 13px;
+                display: none;
+                h3, h4{
+                    color: #ffffff;
+                }
+                h3{
+                    font: 600 16px 'Roboto', sans-serif;
+                    margin: 0;
+                }
+                h4{
+                    font: 300 15px 'Roboto', sans-serif;
+                    margin: 0 0 5.5px 0;
+                }
+            }
+            &:hover .hoverColorSearch{
+                background-color: rgba($color: #572EE5, $alpha: 0.65);
+            }
+            &:hover .buttonsScriptSearch{
+                width: 45%;
+            }
+            &:hover .infoGifSearch{
+                display: initial;
+            }
+        }
+    }
+    #buttonViewMore{
+        display: flex;
+        justify-content: center;
+        #viewMore{
+            width: 127px;
+            height: 50px;
+            border: 1px solid;
+            border-radius: 25px;
+            margin: 78px 40% 79px 40%;
+            font: 900 13px 'Montserrat', sans-serif;
+            letter-spacing: 0;
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width:750px){
+    #withResults{
+        #gifsToShow{
+            .cardExpandGridGif{
+                .buttonCloseExpandSearch{
+                    margin: 0 10.48% 0 0;
+                    top: 64px;
+                    font-size: 16px;
+                    &:hover{
+                        cursor: none;
+                    }
+                }
+                img{
+                    width: 84.8%;
+                    height: 245px;
+                    margin: 156px 0 0 0;
+                }
+                .buttonsScriptSearch{
+                    margin: 0 7.73% 0 0;
+                    top: 418px;
+                }
+                .infoGifSearch{
+                    margin: 0 0 0 7.87%;
+                    top: 415px;
+                }
+            }
+            .cardNormal{
+                width: 41.62%;
+                margin: 2.8%;
+                &:before{
+                    padding-top: 65.4%;
+                }
+                .hoverColorSearch{
+                    display: none;
+                }
+                &:hover .buttonsScriptSearch{
+                    width: 0;
+                }
+                &:hover .infoGifSearch{
+                    display: none;
+                }
+            }
+        }
+        #buttonViewMore{
+            #viewMore{
+                margin: 78px 10% 78px 10%;
+            }
+        }
+    }
+}

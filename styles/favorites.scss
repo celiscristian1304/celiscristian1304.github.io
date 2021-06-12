@@ -1,0 +1,74 @@
+@import '_header';
+@import '_initStyles';
+@import '_colors';
+@import '_trending';
+@import '_footer';
+@import '_gridGifs';
+
+.dayColors{
+    .favoritesAnchor{
+        color: #9CAFC3;
+    }
+}
+.nightColors{
+    .favoritesAnchor{
+        color: #9CAFC3;
+    }
+}
+
+#titleFavorites{
+    display: flex;
+    margin: 106px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 28px;
+    }
+    h1{
+        font: 900 25px 'Montserrat', sans-serif;
+        line-height: 30px;
+        text-transform: capitalize;
+        margin: 8px 0 36px 0;
+    }
+}
+#gifsSearched{
+    overflow: hidden;
+    #withoutResults{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 73.3px 0 0 0;
+        img{
+            width: 150px;
+        }
+        p{
+            font: 900 22px 'Montserrat', sans-serif;
+            line-height: 33px;
+            max-width: 431px;
+            text-align: center;
+            margin: 23.7px 0 137px 0;
+        }
+    }
+    #withResults{
+        margin: -86px 0 0 0;
+    }
+}
+
+@media screen and (max-width:750px){
+    #titleFavorites{
+        margin: 105px 0 0 0;
+        h1{
+            font-size: 20px;
+        }
+    }
+    #gifsSearched{
+        #withoutResults{
+            margin: 50px 0 0 0;
+            p{
+                font: 900 17px 'Montserrat', sans-serif;
+                max-width: 320px;
+                margin: 23.7px 0 100px 0;
+            }
+        }
+    }
+}

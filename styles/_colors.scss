@@ -1,0 +1,586 @@
+.dayColors{
+    background-color: #FFFFFF;
+    header{
+        border-color: #572EE5;
+        a{
+            .wordGifos{
+                color: #572EE5;
+                background-color: #FFFFFF;
+            }
+        }
+        #backGroundColorHeader{
+            background-color: #FFFFFF;
+            /* border-color: #572EE5; */
+        }
+        nav{
+            ul{
+                li{
+                    span{
+                        color: #572EE5;
+                    }
+                    .addGifos{
+                        &:hover{
+                            background-color: #572EE5;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .favoritesAnchor, .myGifosAnchor{
+        color: #572EE5;
+    }
+    .addGifos{
+        background-color: #FFFFFF;
+        color: #572EE5;
+        border-color: #572EE5;
+        &:hover{
+            background-color: #572EE5;
+            color: #FFFFFF;
+        }
+    }
+    /* Main page----------------------------------------------------------------------------------------- */
+    #mainInformation{
+        h1{
+            color: #572EE5;
+            span{
+                color: #50e3c2;
+            }
+        }
+    }
+    #searchInput{
+        border-color: #572EE5;
+        #inputSearch{
+            #textTosearch{
+                background: #FFFFFF;
+                color: #000000;
+            }
+            #magnifyingGlassNormal{
+                color: #572EE5;
+            }
+        }
+    }
+    #trendingWords{
+        h2, span{
+            color: #572EE5;
+        }
+    }
+    #gifsSearched{
+        #titleWithOutResults, #titleWithResults{
+            color: #572EE5;
+        }
+        #legendWithOutResults{
+            color: #50e3c2;
+        }
+        #withResults{
+            #gifsToShow{
+                .cardExpandGridGif{
+                    background-color: #ffffff;
+                    .buttonCloseExpandSearch{
+                        color: #572EE5;
+                    }
+                    .buttonsScriptSearch{
+                        button, a{
+                            background-color: rgba($color: #ffffff, $alpha: 0.65);
+                            border-color: #CED7E1;
+                            &:hover{
+                                background-color: rgba($color: #ffffff, $alpha: 1);
+                            }
+                            span{
+                                color: rgba($color: #572EE5, $alpha: 0.5);
+                            }
+                            &:hover span{
+                                color: rgba($color: #572EE5, $alpha: 1);
+                            }
+                        }
+                    }
+                    .infoGifSearch{
+                        h3, h4{
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            #buttonViewMore{
+                #viewMore{
+                    background-color: #FFFFFF;
+                    border-color: #572EE5;
+                    color: #572EE5;
+                    &:hover{
+                        background-color: #572EE5;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    /* Favorite page ------------------------------------------------------------------------------------- */
+    #titleFavorites{
+        h1{
+            color: #572EE5;
+        }
+    }
+    #gifsSearched{
+        #withoutResults{
+            p{
+                color: #50e3c2;
+            }
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    /* My Gifos page ------------------------------------------------------------------------------------- */
+    #titleMyGifs{
+        h1{
+            color: #572EE5;
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    #trendingGifosTitle{
+        background: #F3F5F8;
+        h2{
+            color: #572EE5;
+        }
+        p{
+            color: #000000;
+        }
+    }
+    #topThreeTrendingGifos, .bottomTrendinggifos{
+        background: #F3F5F8;
+    }
+    #topThreeTrendingGifos{
+        #gifsTrendingGifos{
+            .cardExpand{
+                background-color: #ffffff;
+                .buttonCloseExpand{
+                    color: #572EE5;
+                }
+                .buttonsScript{
+                    button, a{
+                        background-color: rgba($color: #ffffff, $alpha: 0.65);
+                        border-color: #CED7E1;
+                        &:hover{
+                            background-color: rgba($color: #ffffff, $alpha: 1);
+                        }
+                        span{
+                            color: rgba($color: #572EE5, $alpha: 0.5);
+                        }
+                        &:hover span{
+                            color: rgba($color: #572EE5, $alpha: 1);
+                        }
+                    }
+                }
+                .infoGif{
+                    h3, h4{
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+    /* New Gif Page -------------------------------------------------------------------------------------- */
+    .reloj, .repeatCapture{
+        color: #572EE5;
+    }
+    #mainVideo{
+        #videoShow{
+            border-color: #572EE5;
+            #bodyVideo{
+                p:nth-child(1), p:nth-child(2){
+                    color: #572EE5;
+                }
+                p:nth-child(2){
+                    span{
+                        color: #50e3c2;
+                    }
+                }
+                p:nth-child(3), p:nth-child(4){
+                    color: #000000;
+                }
+            }
+        }
+    }
+    #buttonTransition{
+        #indicatorsButton{
+            .numberIndicators{
+                border-color: #572EE5;
+                color: #572EE5;
+            }
+            .numberIndicatorsSelected{
+                border-color: #572EE5;
+                background-color: #572EE5;
+                color: #FFFFFF;
+            }
+        }
+        #lineOverButton{
+            border-color: #572EE5;
+            background-color: #572EE5;
+        }
+        #createGif{
+            border-color: #572EE5;
+            background-color: #FFFFFF;
+            color: #572EE5;
+            &:hover{
+                background-color: #572EE5;
+                color: #FFFFFF;
+            }
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    #sameFooter{
+        background: #FFFFFF;
+        border-color: #572EE5;
+        .icons{
+            #iconsToShare{
+                color: #000000;
+            }
+            a{
+                span{
+                    color: #CDD6E0;
+                    &:hover{
+                        color: #572EE5;
+                    }
+                }
+            }
+        }
+        #copyRight{
+            color: #000000;
+        }
+    }
+}
+
+.nightColors{
+    background-color: #37383C;
+    header{
+        border-color: #000000;
+        a{
+            .wordGifos{
+                color: #FFFFFF;
+                background-color: #37383C;
+            }
+        }
+        #backGroundColorHeader{
+            background-color: #37383C;
+            border-color: #000000;
+        }
+        nav{
+            ul{
+                li{
+                    span {
+                        color: #FFFFFF;
+                    }
+                    .addGifos{
+                        &:hover{
+                            background-color: #FFFFFF;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .favoritesAnchor, .myGifosAnchor{
+        color: #FFFFFF;
+    }
+    .addGifos{
+        background-color: #37383C;
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        &:hover{
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+    }
+    /* Main page----------------------------------------------------------------------------------------- */
+    #mainInformation{
+        h1{
+            color: #FFFFFF;
+            span{
+                color: #50e3c2;
+            }
+        }
+    }
+    #searchInput{
+        border-color: #FFFFFF;
+        #inputSearch{
+            #textTosearch{
+                background: #37383C;
+                color: #FFFFFF;
+            }
+            #magnifyingGlassNormal{
+                color: #FFFFFF;
+            }
+        }
+    }
+    #trendingWords{
+        h2, span{
+            color: #FFFFFF;
+        }
+    }
+    #gifsSearched{
+        #titleWithOutResults, #legendWithOutResults, #titleWithResults{
+            color: #FFFFFF;
+        }
+        #withResults{
+            #gifsToShow{
+                .cardExpandGridGif{
+                    background-color: #37383C;
+                    .buttonCloseExpandSearch{
+                        color: #FFFFFF;
+                    }
+                    .buttonsScriptSearch{
+                        button, a{
+                            background-color: rgba($color: #37383C, $alpha: 0.65);
+                            border-color: #CED7E1;
+                            &:hover{
+                                background-color: rgba($color: #37383C, $alpha: 1);
+                            }
+                            span{
+                                color: rgba($color: #FFFFFF, $alpha: 0.5);
+                            }
+                            &:hover span{
+                                color: rgba($color: #FFFFFF, $alpha: 1);
+                            }
+                        }
+                    }
+                    .infoGifSearch{
+                        h3, h4{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            #buttonViewMore{
+                #viewMore{
+                    background-color:#37383C;
+                    border-color: #FFFFFF;
+                    color: #FFFFFF;
+                    &:hover{
+                        background-color: #FFFFFF;
+                        color: #37383C;
+                    }
+                }
+            }
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    /* Favorite page ------------------------------------------------------------------------------------- */
+    #titleFavorites{
+        h1{
+            color: #FFFFFF;
+        }
+    }
+    #gifsSearched{
+        #withoutResults{
+            p{
+                color: #FFFFFF;
+            }
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    /* My Gifos page ------------------------------------------------------------------------------------- */
+    #titleMyGifs{
+        h1{
+            color: #FFFFFF;
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    #trendingGifosTitle{
+        background: #222326;
+        h2, p{
+            color: #FFFFFF;
+        }
+    }
+    #topThreeTrendingGifos, .bottomTrendinggifos{
+        background: #222326;
+    }
+    #topThreeTrendingGifos{
+        #gifsTrendingGifos{
+            .cardExpand{
+                background-color: #37383C;
+                .buttonCloseExpand{
+                    color: #FFFFFF;
+                }
+                .buttonsScript{
+                    button, a{
+                        background-color: rgba($color: #37383C, $alpha: 0.65);
+                        border-color: #CED7E1;
+                        &:hover{
+                            background-color: rgba($color: #37383C, $alpha: 1);
+                        }
+                        span{
+                            color: rgba($color: #FFFFFF, $alpha: 0.5);
+                        }
+                        &:hover span{
+                            color: rgba($color: #FFFFFF, $alpha: 1);
+                        }
+                    }
+                }
+                .infoGif{
+                    h3, h4{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    /* New Gif Page -------------------------------------------------------------------------------------- */
+    .reloj, .repeatCapture{
+        color: #FFFFFF;
+    }
+    #mainVideo{
+        #videoShow{
+            border-color: #FFFFFF;
+            #bodyVideo{
+                p:nth-child(1), p:nth-child(2){
+                    color: #FFFFFF;
+                }
+                p:nth-child(2){
+                    span{
+                        color: #50e3c2;
+                    }
+                }
+                p:nth-child(3), p:nth-child(4){
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    #buttonTransition{
+        #indicatorsButton{
+            .numberIndicators{
+                border-color: #FFFFFF;
+                color: #FFFFFF;
+            }
+            .numberIndicatorsSelected{
+                border-color: #FFFFFF;
+                background-color: #FFFFFF;
+                color: #37383C;
+            }
+        }
+        #lineOverButton{
+            border-color: #FFFFFF;
+            background-color: #FFFFFF;
+        }
+        #createGif{
+            border-color: #FFFFFF;
+            background-color: #37383C;
+            color: #FFFFFF;
+            &:hover{
+                background-color: #FFFFFF;
+                color: #37383C;
+            }
+        }
+    }
+    /* --------------------------------------------------------------------------------------------------- */
+    #sameFooter{
+        background: #37383C;
+        border-color: #000000;
+        .icons{
+            #iconsToShare{
+                color: #FFFFFF;
+            }
+            a{
+                span{
+                    color: #CDD6E0;
+                    &:hover{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        #copyRight{
+            color: #FFFFFF;
+        }
+    }
+}
+@media screen and (max-width:750px){
+    .dayColors{
+        header{
+            .icon-bars, .CheckboxActive{
+                color: #572EE5;
+            }
+            nav{
+                background-color: #572EE5;
+                opacity: 0.9;
+                ul{
+                    li{
+                        span{
+                            color:#FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+        .favoritesAnchor, .myGifosAnchor{
+            color: #FFFFFF;
+        }
+        #gifsSearched{
+            #withResults{
+                #buttonViewMore{
+                    #viewMore{
+                        &:hover{
+                            background-color: #FFFFFF;
+                            color: #572EE5;
+                        }
+                    }
+                } 
+            }
+        }
+        #sameFooter{
+            .icons{
+                a{
+                    span{
+                        &:hover{
+                            color: #CDD6E0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nightColors{
+        header{
+            .icon-bars, .CheckboxActive{
+                color: #FFFFFF;
+            }
+            nav{
+                background: rgba(0, 0, 0, 1);
+                ul{
+                    li{
+                        span{
+                            color:#FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+        .favoritesAnchor, .myGifosAnchor{
+            color: #FFFFFF;
+        }
+        #gifsSearched{
+            #withResults{
+                #buttonViewMore{
+                    #viewMore{
+                        &:hover{
+                            background-color: #37383C;
+                            color: #FFFFFF;
+                        }
+                    }
+                }  
+            }
+        }
+        #sameFooter{
+            .icons{
+                a{
+                    span{
+                        &:hover{
+                            color: #CDD6E0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

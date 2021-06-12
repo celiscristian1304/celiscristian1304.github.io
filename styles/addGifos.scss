@@ -1,0 +1,228 @@
+@import '_header';
+@import '_initStyles';
+@import '_colors';
+@import '_footer';
+
+.dayColors{
+    .addGifos{
+        background-color: #9CAFC3;
+        color: #FFFFFF;
+        border: none;
+    }
+}
+.nightColors{
+    .addGifos{
+        background-color: #9CAFC3;
+        color: #FFFFFF;
+        border: none;
+    }
+}
+
+#movieTape{
+    position: absolute;
+    right: 0;
+    margin: 477px 11.6% 0 0;
+}
+.reloj{
+    position:absolute;
+    right: 0;
+    margin: 518px 26.08% 0 0;
+    font: 900 15px 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+.repeatCapture{
+    position:absolute;
+    right: 0;
+    margin: 518px 26.08% 0 0;
+    font: 900 13px 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    cursor: pointer;
+    &:hover{
+        border-bottom: 2px solid #5ED7C6;
+    }
+}
+#mainVideo{
+    display: flex;
+    margin: 99px 0 0 0;
+    #cameraComplete{
+        margin: 118px 0 0 10.83%;
+    }
+    #lightCamera{
+        width: 91px;
+        margin: 124px 0 0 2px;
+    }
+    #videoShow{
+        border: 1px solid;
+        width: 688px;
+        height: 390px;
+        position: absolute;
+        right: 0;
+        margin: 0 26.11% 0 26.11%;
+        #cornerUpperLeft{
+            position: absolute;
+            width: 27px;
+            height: 25px;
+            border-top: 1px solid #50E3C2;
+            border-left: 1px solid #50E3C2;
+            margin: 20px;
+            left: 0;
+        }
+        #cornerUpperRigth{
+            position: absolute;
+            width: 27px;
+            height: 25px;
+            border-top: 1px solid #50E3C2;
+            border-right: 1px solid #50E3C2;
+            margin: 20px;
+            right: 0;
+        }
+        #cornerLowerLeft{
+            position: absolute;
+            width: 27px;
+            height: 25px;
+            border-bottom: 1px solid #50E3C2;
+            border-left: 1px solid #50E3C2;
+            margin: 20px;
+            left: 0;
+            bottom: 0;
+        }
+        #cornerLowerRigth{
+            position: absolute;
+            width: 27px;
+            height: 25px;
+            border-bottom: 1px solid #50E3C2;
+            border-right: 1px solid #50E3C2;
+            margin: 20px;
+            right: 0;
+            bottom: 0;
+        }
+        #bodyVideo{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p:nth-child(1), p:nth-child(2){
+                font: 900 25px 'Montserrat', sans-serif;
+                line-height: 35px;
+            }
+            p:nth-child(1){
+                margin: 0;
+            }
+            p:nth-child(2){
+                margin: 0 0 4px 0;
+            }
+            p:nth-child(3), p:nth-child(4){
+                font: 100 16px 'Roboto', sans-serif;
+                line-height: 29px;
+                margin: 0;
+            }
+        }
+        video, #hoverVideo{
+            position: absolute;
+            width: 480px;
+            height: 320px;
+            margin: 35px 104px;
+        }
+        #hoverVideo{
+            z-index: 1;
+            background-color: rgba($color: #572EE5, $alpha: 0.65);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            span:nth-child(1){
+                color: #50E3C2;
+            }
+            span:nth-child(2){
+                color: #FFFFFF;
+                font: 900 15px 'Montserrat', sans-serif;
+                margin: 10px 0 0 0;
+            }
+            .buttonsScriptSearch{
+                width: 74px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                justify-content: space-between;
+                margin: 11px 12px;
+                visibility: hidden;
+                button, a{
+                    padding: 0;
+                    margin: 0;
+                    width: 43.24%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba($color: #ffffff, $alpha: 0.65);
+                    border-radius: 6px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba($color: #ffffff, $alpha: 1);
+                    }
+                    /* The following code lines do the height exactly equal to width */
+                    &:before{
+                        content: "";
+                        display: block;
+                        padding-top: 100%; /* relation 1:1 */
+                    }
+                    span{
+                        font-size: 18px;
+                        color: #572EE5;
+                    }
+                }
+            }
+        }
+    }
+}
+#buttonTransition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 0 0 0;
+    #indicatorsButton{
+        width: 147px;
+        display: flex;
+        justify-content: space-between;
+        span{
+            padding: 4px 9.96px;
+            font: 100 18px 'Roboto', sans-serif;
+            border: 1px solid;
+            border-radius: 8rem;
+        }
+    }
+    #lineOverButton{
+        width: 55.27%;
+        height: 4.9px;
+        border: 1px solid;
+        border-radius: 8rem;
+        margin: 19px 0 20.1px 0;
+    }
+    #createGif{
+        width: 127px;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 25px;
+        font: 900 13px 'Montserrat', sans-serif;
+        letter-spacing: 0;
+        cursor: pointer;
+    }
+}
+#sameFooter{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+
+@media screen and (min-width:1441px) {
+    #mainVideo{
+        #videoShow{
+            margin: 0 32% 0 0;
+        }
+    }
+}
